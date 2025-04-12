@@ -21,7 +21,7 @@ test.describe("Authentication test", () => {
         expect(token).toBeDefined();
     });
 
-    test('Invalid Login', async () => {
+    test('Invalid Login Verification', async () => {
         const response = await apiContext.post('/auth', {
           data: {
             username: 'invalidUser',
